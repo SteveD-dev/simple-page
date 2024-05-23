@@ -1,0 +1,97 @@
+@media screen and (min-width: 737px) {
+  .roadmap-container {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .roadmap-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .roadmap-image-container img {
+    display: none;
+  }
+}
+
+.body-roadmap {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.roadmap-head {
+  width: 60%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.roadmap-container {
+  background-color: #f0f0f0;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.roadmap {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.roadmap-step {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-description {
+  font-size: 1em;
+  color: #666;
+}
+
+.roadmap-line {
+  width: 2px;
+  height: 50px;
+  background: #333;
+  position: absolute;
+  bottom: -50px;
+}
+
+.roadmap-step:last-child .roadmap-line {
+  display: none;
+}
+
+.roadmap-image-container {
+}
+.roadmap-image {
+  object-fit: contain;
+  display: block;
+}
